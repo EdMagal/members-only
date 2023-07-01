@@ -22,7 +22,5 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @postAuthor = "Anonymous"
-    @postAuthor = @post.user.username if signed_in?
   end
 end

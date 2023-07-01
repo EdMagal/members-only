@@ -1,5 +1,12 @@
 <h1 id="title"><%= @post.title %></h1>
-<h2 id="author"><%= @postAuthor %></h2>
+
+<!-- Only shows the name of the author if a user is signed in -->
+<% if signed_in? %>
+  <h2 id="author">By <%= @post.user.username %></h2>
+<% else %>
+  <h2 id="author">Anonymous</h2>
+<% end %>
+
 <p id="body"><%= @post.body %></p>
 
 <%= link_to "Back", posts_path %>
