@@ -52,3 +52,13 @@ test:
   username: edmagal
   password:
   timeout: 5000
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: members-only_production
+  pool: 5
+  username: edmagal
+  password:
+  timeout: 5000
+```
