@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: members-only_development
+  database: members_only_development
   pool: 5
   username: edmagal
   password:
@@ -61,4 +61,3 @@ production:
   username: edmagal
   password:
   timeout: 5000
-```
